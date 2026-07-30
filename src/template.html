@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel='stylesheet' href='style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,650&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="container">
+    <h1 class="name">do</h1>
+    <h1 class="name2">it</h1>
+    </button>
+ 
+<div class='container2'>
+    <h2 class='name3'>Organize your <span class='work'>work</span>.</h2>
+<h2 class='name4'>Finish what <span class='matters'>matters</span></h2>
+</div>
+ 
+<div class="start-container">
+<button class="startTheApp">Start the app</button>
+<h2 class='name5'>A focused place for your <span class='projectSpan'>projects</span> and daily <span class='tasks'>tasks</span>.</h2>
+</div>
+ 
+<div class="app">
+    <aside class="sidebar">
+        <div class="projects">projects</div>
+        
+        <input class='project-name-input' placeholder ='project name' required >
+        <button class='addproject'>+ add project</button>
+        <div class=project-list></div>
+        <input type="text" class="rename-input">
+    </aside>
+    <main class="content">
+        <div class='container-in-content'>
+            <div class="todos"></div>
+            <button class='addtodo'>+ Add Todo</button>
+        </div>
+        <div class="todo-list"></div>
+        <div class='rename-delete-project-container'>
+            <button class='deletep'>delete project</button>
+            
+            <button class='rename'>rename project</button>
+        </div>
+    </main>
+    <!-- =========================
+     ADD TODO MODAL
+========================= -->
+
+<div class="todo-modal ">
+
+    <div class="todo-modal-content">
+
+        <h2 class="todo-modal-title">Create New Todo</h2>
+
+        <div class="todo-form-group">
+            <label for="todo-title">Title</label>
+            <input
+                id="todo-title"
+                class="todo-title-input"
+                type="text"
+                placeholder="type title..."
+            >
+        </div>
+
+        <div class="todo-form-group">
+            <label for="todo-description">Description</label>
+            <textarea
+                id="todo-description"
+                class="todo-description-input"
+                placeholder="Describe the task..."
+            ></textarea>
+        </div>
+
+        <div class="todo-form-group">
+            <label for="todo-date">Due Date</label>
+            <input
+                id="todo-date"
+                class="todo-date-input"
+                type="date"
+            >
+        </div>
+
+        <div class="todo-form-group">
+            <label for="todo-priority">Priority</label>
+
+            <select
+                id="todo-priority"
+                class="todo-priority-input"
+            >
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+
+
+        <div class="todo-modal-buttons">
+
+            <button class="cancel-todo">
+                Cancel
+            </button>
+
+            <button class="save-todo">
+                Save Todo
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+    <aside class="detail-panel">
+        <div class="detail-label">Task Details</div>
+        <h2 class="detail-title">Todo title goes here</h2>
+ 
+        <div class="detail-field">
+            <div class="detail-field-label">Description</div>
+            <div class="detail-field-value">Todo description goes here</div>
+        </div>
+ 
+        <div class="detail-field">
+            <div class="detail-field-label">Due date</div>
+            <div class="detail-field-date">Due date goes here</div>
+        </div>
+ 
+        <div class="detail-field">
+            <div class="detail-field-label">Priority</div>
+            <div class="detail-field-priority">Priority goes here</div>
+        </div>
+
+        <div class="todo-edit-input-container">
+<input id='title-edit-input' type='text'>
+<textarea id="description-edit-input"></textarea>
+<input id="date-edit-input" type="date">
+<select id="priority-edit-input">
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+</select>
+</div>
+ 
+        <div class="detail-actions">
+            <button class="edit-todo">edit</button>
+            <button class="delete-todo">delete</button>
+        </div>
+    </aside>
+</div>
+ 
+</body>
+</html>
